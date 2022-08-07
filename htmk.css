@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'BhuTuka Expanded One';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.Navbar {
+    width: 100%;
+    background-color: rgb(98,52,18);
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    margin: 100px 0px 100px 0px;
+}
+
+.Navbar ul {
+    display: flex;
+}
+
+.Navbar ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+.Navbar ul li a {
+    color: white;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+.Navbar ul li:hover {
+    background-color: rgb(98,52,18);
+}
+
+.Navbar ul li:hover a {
+    color: rgb(255,239,0);
+}
+
+.Navbar ul li .hone:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255,239,0);
+    transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+}
+
+.Navbar ul li a:hover:after {
+    width: 100%;
+}
+
+.Navbar ul li .hwo:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(255,239,0);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+    -o-transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+    transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+}
+
+.Navbar ul li .hee:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(238, 224, 143);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+    -o-transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+    transition: all .5s cubic-bezier(0.68, -0.0, 0.265, 1.0);
+}
+
+.hour:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    width: 0;
+    background: transparent;
+}
+
+.hour:after {
+    transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+
+.hour:hover:after {
+    width: 100%;
+    left: 0;
+    background: rgb(238, 224, 143);
+}
+
+.hive:before, .hive:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(238, 224, 143);
+    transition: 0.5s;
+}
+
+.hive:after {
+    left: 0;
+    bottom: 0;
+}
+
+.hive:before {
+    left: 0;
+    top: 0;
+}
+
+.hive:hover:after, .hive:hover:before{
+    width: 100%;
+}
